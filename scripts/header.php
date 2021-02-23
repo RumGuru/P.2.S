@@ -1,5 +1,4 @@
-<?php
-echo '<header>
+<header>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-3">
     <div class="container">
         <a class="navbar-brand" href="#">P 2 S</a>
@@ -42,5 +41,4 @@ echo '<header>
     </div>
 </nav>
 
-</header>';
-?>
+</header>
