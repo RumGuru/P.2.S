@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
-        crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
     <title>CPS-ASSIGNMENT</title>
   </head>
   
@@ -44,8 +44,8 @@
                         <li class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Types of Services</a>
                             <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">Ride to Destination</a>
-                                <a href="#" class="dropdown-item">Item Delivery</a>
+                                <a href="#" class="dropdown-item">Ride to a destination</a>
+                                <a href="#" class="dropdown-item">Ride & Delivery</a>
                             </div>
                         </li>
                     </ul>
@@ -56,20 +56,79 @@
           
       </header>
     
+      <div class="container">
+          <div class="row justify-content-around">
+            <div id="ride" class="resize col-5 jumbotron">
+                <h1 class="display-4">Ride</h1>
+                <p class="lead">This service is for you to book a ride from a source to a destination.</p>
+                <br>
+                <hr class="my-4">
+                <p>It will find the closest driver available to give you a ride to any location instide the city or up to 50km far.</p>
+                <br>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Plan your trip</a>
+                </p>
+              </div>
+              <div id="separator"></div>
+              <div id="ride-deliver" class="resize col-5 jumbotron">
+                <h1 class="display-4">Ride & Deliver</h1>
+                <p class="lead">This service is for you to book a delivery from one of our two associated stores to a destination.</p>
+                <hr class="my-4">
+                <p>It will find the closest driver available to deliver an item from the store of your choice.</p>
+                <br>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="#" role="button">Deliver an item</a>
+                </p>
+              </div>
+          </div>
+
+      </div>
+      
+      <footer id="footer" class="fixed-bottom bg-light text-center text-lg-start">
+        <!-- Grid container -->
+        <div class="container p-4">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">About Us</h5>
+      
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+              </p>
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Developers</h5>
+      
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+                molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae
+                aliquam voluptatem veniam, est atque cumque eum delectus sint!
+              </p>
+            </div>
+            
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-dark" href="https://github.com/RumGuru/P.2.S">P2S Github Repository</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
      
-     
-     
-     
-     
-     
-     
-     
-     
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
