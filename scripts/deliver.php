@@ -15,14 +15,16 @@
   <div>
     
     <h1 class="">Plan your Delivery</h1>
+    
+
     <br>
     <div class='row'>
-        <div class='col-10'>
-          
+      <div class='col-10'>
+        
           <div class="card shop-item" style="width: 10rem;" draggable="true" >
                 <img class="card-img-top img-fluid" src="https://source.unsplash.com/PAEwrnasOvY/301x200" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Bonsai Tree</h4>
+                    <h4 class="card-title-0">Bonsai Tree</h4>
                     <p class="card-text">Refer to Mr.Miyagi for trimming instructions</p>
                     <p class="card-text">
                         <small class="text-muted">$9.99</small>
@@ -31,20 +33,22 @@
           </div>
             
             <div class="card shop-item" style="width: 10rem;" draggable="true" >
-                <img class="card-img-top img-fluid" src="https://source.unsplash.com/PAEwrnasOvY/301x200" alt="">
+                <img class="card-img-top img-fluid" src="https://source.unsplash.com/SavQfLRm4Do/301x200" alt="">
                 <div class="card-body">
-                    <h4 class="card-title">Bonsai Tree</h4>
-                    <p class="card-text">Refer to Mr.Miyagi for trimming instructions</p>
+                    <h4 class="card-title-1">Lavender</h4>
+                    <p class="card-text">Lavandula is a genus of 47 known species of flowering plants in the mint family</p>
                     <p class="card-text">
                         <small class="text-muted">$9.99</small>
                     </p>
                </div>
             </div>
-        </div>
+          
+      </div>
         
          <div class="col-2 shop-cart" style="background-color: #F3F3F3">
-          <h6>Shopping cart</h6>
-        </div>
+         <h6>Shopping cart</h6>
+         <h6 class="total-price">Total Price --> $0</h6>
+          </div>
      </div>
   
 
