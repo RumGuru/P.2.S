@@ -47,7 +47,7 @@
               <td>` + document.getElementById('cars').value + `</td>
               <td>` + document.getElementById('source').value + `</td>
               <td>` + document.getElementById('destination').value + `</td>
-              <td>$500</td>
+              <td id="price"></td>
             </tr>
             </tbody>
           </table>`

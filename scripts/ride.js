@@ -48,6 +48,7 @@ function calcRoute(){
         console.log(response);
         if (status === 'OK'){
             directionsDisplay.setDirections(response);
+            document.getElementById('price').innerHTML = response.routes[0].legs[0].distance.text;
         } else {
             window.alert('Directions request failed ' + status);
         }
