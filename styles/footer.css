@@ -1,16 +1,16 @@
-@media (max-height: 1640px) and (max-width: 768px) {
+@media (max-width: 768px) {
   #footer {
     position: relative;
   }
 }
 
-@media (max-height: 1200px) and (max-width: 992px) {
+@media (max-height: 1670px) and (max-width: 992px) {
   #footer {
     position: relative;
   }
 }
 
-@media (max-height: 900px) and (min-width: 993px) {
+@media (max-height: 1400px) and (min-width: 993px) {
   #footer {
     position: relative;
   }
