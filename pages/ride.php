@@ -52,6 +52,21 @@
             </tbody>
           </table>`
     }
+
+    function onFormSubmit(e) {
+      let info = document.getElementById("info");
+      e.preventDefault();
+      info.innerHTML = `
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        Your trip was added to the shopping cart!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;
+      setTimeout(() => {
+        info.innerHTML = ""
+      }, 2000);
+    }
   </script>
 </head>
 
@@ -60,31 +75,35 @@
   <div class="container">
     <h1 class="">Plan your trip</h1>
     <br>
-    <form onchange="onFormChange()">
+    <form id="form" onsubmit="onFormSubmit(event)" onchange="onFormChange()">
       <div class="form-group">
         <label for="cars">Available cars</label>
         <select class="form-control" id="cars">
           <option selected>Choose...</option>
-          <option value="Tesla Model S">Tesla Model S - Price: CAD$100/km</option>
-          <option value="Tesla Model 3">Tesla Model 3 - Price: CAD$150/km</option>
-          <option value="Tesla Model X">Tesla Model X - Price: CAD$200/km</option>
-          <option value="Tesla Model Y">Tesla Model Y - Price: CAD$250/km</option>
+          <option value="Tesla Model S">Tesla Model S - Price: CAD$10/km</option>
+          <option value="Tesla Model 3">Tesla Model 3 - Price: CAD$15/km</option>
+          <option value="Tesla Model X">Tesla Model X - Price: CAD$20/km</option>
+          <option value="Tesla Model Y">Tesla Model Y - Price: CAD$25/km</option>
         </select>
         <br>
         <label for="source">Source</label>
-        <input onchange="initMap()" type="email" class="form-control" id="source" placeholder="Enter source address">
+        <input onchange="initMap()" class="form-control" id="source" placeholder="Enter source address">
         <br>
         <label for="destination">Destination</label>
-        <input onchange="initMap()" type="email" class="form-control" id="destination" placeholder="Enter destination address">
+        <input onchange="initMap()" class="form-control" id="destination" placeholder="Enter destination address">
       </div>
+      <br>
+      <div id="result"></div>
+      <div id="map"></div>
+      <br>
+      <input type="submit" class="btn btn-secondary w-100" value="Add to shopping cart">
+      <br>
+      <br>
+      <div id="info"></div>
     </form>
-    <br>
-    <div id="result"></div>
-    <div id="map"></div>
   </div>
-
   <?php include 'footer.php'; ?>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=<PUT YOUR API KEY HERE>&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCT0erosDR5II_8-FtZMdtCjCC_o5p2msE&callback=initMap">
   </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
