@@ -1,5 +1,7 @@
 function initMap() {
     geocoder = new google.maps.Geocoder();
+    directionsService = new google.maps.DirectionsService;
+    directionsDisplay = new google.maps.DirectionsRenderer;
     
     let initLocation = {lat: 43.7272, lng: -79.4121};
 
@@ -9,7 +11,7 @@ function initMap() {
     });
    
 
-   
+    directionsDisplay.setMap(map);
     codeAddress(document.getElementById('source').value, "Source");
     codeAddress(document.getElementById('destination').value, "Destination");
   }
@@ -38,9 +40,6 @@ const codeAddress = (address, content) => {
 }
 
 function calcRoute(){
-    let directionsService = new google.maps.DirectionsService;
-    let directionsDisplay = new google.maps.DirectionsRenderer;
-
     directionsService.route({
         origin: document.getElementById('source').value,
         destination: document.getElementById('destination').value,
