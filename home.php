@@ -40,7 +40,7 @@
         </p>
         <br />
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="./pages/ride.php" role="button">Plan your trip</a>
+          <a class="btn btn-primary btn-lg" href="/pages/ride.php" role="button">Plan your trip</a>
         </p>
       </div>
       <div id="separator"></div>
@@ -57,7 +57,7 @@
         </p>
         <br />
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="./pages/deliver.php" role="button">Deliver an item</a>
+          <a class="btn btn-primary btn-lg" href="/pages/deliver.php" role="button">Deliver an item</a>
         </p>
       </div>
     </div>
