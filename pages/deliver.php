@@ -48,7 +48,8 @@
          <div class="col-2 shop-cart" style="background-color: #F3F3F3">
          <h6>Shopping cart</h6>
          <h6 class="total-price">Total Price --> $0</h6>
-          </div>
+         <button onclick="clearShoppingCart()">Clear</button>
+         </div>
      </div>
   
 
