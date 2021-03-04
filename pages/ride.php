@@ -39,15 +39,17 @@
               <th scope="col">Selected car</th>
               <th scope="col">Source</th>
               <th scope="col">Destination</th>
-              <th scope="col">Price</th>
+              <th scope="col">Price per Km</th>
+              <th scope="col">Total</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>` + document.getElementById('cars').value + `</td>
+              <td>` + document.getElementById('cars').value.split(' - ')[0] + `</td>
               <td>` + document.getElementById('source').value + `</td>
               <td>` + document.getElementById('destination').value + `</td>
-              <td>$500</td>
+              <td id="price-km">` + document.getElementById('cars').value.split(' - ')[1] + `/km</td>
+              <td id="price"></td>
             </tr>
             </tbody>
           </table>`
@@ -80,17 +82,17 @@
         <label for="cars">Available cars</label>
         <select class="form-control" id="cars">
           <option selected>Choose...</option>
-          <option value="Tesla Model S">Tesla Model S - Price: CAD$10/km</option>
-          <option value="Tesla Model 3">Tesla Model 3 - Price: CAD$15/km</option>
-          <option value="Tesla Model X">Tesla Model X - Price: CAD$20/km</option>
-          <option value="Tesla Model Y">Tesla Model Y - Price: CAD$25/km</option>
+          <option value="Tesla Model S - 20">Tesla Model S - Price: $20/km</option>
+          <option value="Tesla Model 3 - 10">Tesla Model 3 - Price: $10/km</option>
+          <option value="Tesla Model X - 25">Tesla Model X - Price: $25/km</option>
+          <option value="Tesla Model Y - 15">Tesla Model Y - Price: $15/km</option>
         </select>
         <br>
         <label for="source">Source</label>
         <input onchange="initMap()" class="form-control" id="source" placeholder="Enter source address">
         <br>
         <label for="destination">Destination</label>
-        <input onchange="initMap()" class="form-control" id="destination" placeholder="Enter destination address">
+        <input onchange="calcRoute()" class="form-control" id="destination" placeholder="Enter destination address">
       </div>
       <br>
       <div id="result"></div>
