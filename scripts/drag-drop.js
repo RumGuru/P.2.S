@@ -5,7 +5,10 @@ const total_price = document.querySelector(".total-price");
 console.log(shop_items);
 console.log(shop_cart);
 
-
+function clearShoppingCart()
+{
+    window.location = window.location;
+}
 
 
 
@@ -43,7 +46,6 @@ for (let i=0 ; i<shop_items.length ; i++){
         itemPrice = document.querySelector('.text-muted').innerHTML;
         console.log(itemPrice);
         calcPrice(itemPrice);
-        console.log(itemTitle);
 		setTimeout(function () {
 			item.style.display = 'none';
 		}, 0)
@@ -77,6 +79,8 @@ const cart = shop_cart;
 
     cart.addEventListener('drop', function (e) {
         console.log('drop');
+        calcPrice(itemPrice);
+
         cart.insertAdjacentHTML('beforeend',(renderSideCartView(itemTitle,itemPrice)));
         total_price.innerHTML=(`Total Price --> ${totalPrice}`);
         draggedItem.remove();
