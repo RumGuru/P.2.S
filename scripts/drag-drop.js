@@ -45,7 +45,7 @@ for (let i=0 ; i<shop_items.length ; i++){
         itemTitle = document.querySelector(`.card-title-${i}`).innerHTML;
         itemPrice = document.querySelector('.text-muted').innerHTML;
         console.log(itemPrice);
-        console.log(itemTitle);
+        calcPrice(itemPrice);
 		setTimeout(function () {
 			item.style.display = 'none';
 		}, 0)
@@ -80,6 +80,7 @@ const cart = shop_cart;
     cart.addEventListener('drop', function (e) {
         console.log('drop');
         calcPrice(itemPrice);
+
         cart.insertAdjacentHTML('beforeend',(renderSideCartView(itemTitle,itemPrice)));
         total_price.innerHTML=(`Total Price --> ${totalPrice}`);
         draggedItem.remove();
