@@ -1,3 +1,56 @@
+//Control Functions
+const moveDown = () => {
+    $(".form-group").css({
+      "margin-top": "150px"
+    })
+}
+
+const moveUp = () => {
+    $(".form-group").css({
+        "margin-top": "0px"
+    })
+}
+
+const onFormChange = () => {
+    document.getElementById('result').innerHTML =
+        `<table class="table">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Selected car</th>
+            <th scope="col">Source</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Price per Km</th>
+            <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>` + document.getElementById('cars').value.split(' - ')[0] + `</td>
+            <td>` + document.getElementById('source').value + `</td>
+            <td>` + document.getElementById('destination').value + `</td>
+            <td id="price-km">` + document.getElementById('cars').value.split(' - ')[1] + `/km</td>
+            <td id="price"></td>
+            </tr>
+            </tbody>
+        </table>`
+}
+
+const onFormSubmit = (e) => {
+    let info = document.getElementById("info");
+    e.preventDefault();
+    info.innerHTML = `
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            Your trip was added to the shopping cart!
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>`;
+    setTimeout(() => {
+        info.innerHTML = ""
+    }, 2000);
+}
+
+//Maps functions
 function initMap() {
     geocoder = new google.maps.Geocoder();
     directionsService = new google.maps.DirectionsService;
@@ -53,5 +106,3 @@ function calcRoute(){
         }
     })
 }
-
-  
