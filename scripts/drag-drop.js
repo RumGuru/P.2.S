@@ -45,7 +45,6 @@ for (let i=0 ; i<shop_items.length ; i++){
         itemTitle = document.querySelector(`.card-title-${i}`).innerHTML;
         itemPrice = document.querySelector('.text-muted').innerHTML;
         console.log(itemPrice);
-        calcPrice(itemPrice);
 		setTimeout(function () {
 			item.style.display = 'none';
 		}, 0)
@@ -86,3 +85,4 @@ const cart = shop_cart;
         draggedItem.remove();
         this.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
     });
+
