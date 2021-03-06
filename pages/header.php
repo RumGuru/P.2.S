@@ -35,6 +35,9 @@
                             <a href="#" class="dropdown-item">Ride & Delivery</a>
                         </div>
                     </li>
+                    <form action="/php-scripts/logout_script.php">
+                        <input class="btn btn-outline-secondary" type="submit" value="Logout">
+                    </form>
                 </ul>
             </div>
         </div>
