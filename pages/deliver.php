@@ -48,7 +48,9 @@
          <div class="col-2 shop-cart" style="background-color: #F3F3F3">
          <h6>Shopping cart</h6>
          <h6 class="total-price">Total Price --> $0</h6>
-         <button onclick="clearShoppingCart()">Clear</button>
+         <button class="btn btn-dark btn-block" type="button" onclick="clearShoppingCart()">Clear</button>
+         <a href='../pages/checkout.php'><button class="btn btn-dark btn-block" type="button">Checkout</button></a>
+         
          </div>
      </div>
   
