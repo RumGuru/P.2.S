@@ -16,34 +16,31 @@
 
 <body>
     <?php include './pages/header.php'; ?>
-    <div class="container">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
 
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
-
-                <div class="fadeIn first">
-                    <h2>Welcome to P.2.S</h2>
-                </div>
-
-                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-                    <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
-                        <input type="text" id="login" class="fadeIn second" name="username" placeholder="Login">
-                        <label for="login" class="help-block"><?php echo $username_err; ?></label>
-                    </div>
-                    <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                        <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" value="<?php echo $username; ?>">
-                        <label for="password" class="help-block"><?php echo $password_err; ?></span>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="fadeIn fourth" value="Login">
-                    </div>
-                </form>
-
-                <div id="formFooter">
-                    <p>Don't have an account? <a class="underlineHover" href="register.php">Sign up now</a>.</p>
-                </div>
-
+            <div class="fadeIn first">
+                <h2>Welcome to P.2.S</h2>
             </div>
+
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                    <input type="text" id="login" class="fadeIn second" name="username" placeholder="Login">
+                    <label for="login" class="help-block"><?php echo $username_err; ?></label>
+                </div>
+                <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
+                    <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password" value="<?php echo $username; ?>">
+                    <label for="password" class="help-block"><?php echo $password_err; ?></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="fadeIn fourth" value="Login">
+                </div>
+            </form>
+
+            <div id="formFooter">
+                <p>Don't have an account? <a class="underlineHover" href="register.php">Sign up now</a>.</p>
+            </div>
+
         </div>
     </div>
 
