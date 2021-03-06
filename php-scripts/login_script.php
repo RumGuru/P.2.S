@@ -3,7 +3,7 @@
 session_start();
 // Check if the user is already logged in, if yes then redirect him to /home page
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    header("location: ../home.php");
+    header("location: /home.php");
     exit;
 }
 // Include config file
@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["username"] = $username;
 
                             // Redirect user to /home page
-                            header("location: ../home.php");
+                            header("location: /home.php");
                         } else {
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";
