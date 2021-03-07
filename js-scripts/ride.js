@@ -33,6 +33,7 @@ const onFormChange = () => {
             </tr>
             </tbody>
         </table>`
+        if(document.getElementById('cars') && document.getElementById('source').value && document.getElementById('destination').value) calcRoute();
 }
 
 const onFormSubmit = (e) => {
@@ -87,7 +88,6 @@ const codeAddress = (address, content) => {
     }, (results) => {
         if (results.length !== 0) {
         map.setCenter(results[0].geometry.location);
-        setMarker(results[0].geometry.location, content);
         }
     })
 }

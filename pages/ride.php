@@ -1,3 +1,4 @@
+<?php require "../php-scripts/ride_script.php"; ?>
 <html>
 
 <head>
@@ -20,10 +21,15 @@
         <label for="cars">Available cars</label>
         <select class="form-control" id="cars">
           <option selected>Choose...</option>
-          <option value="Tesla Model S - 20">Tesla Model S - Price: $20/km</option>
-          <option value="Tesla Model 3 - 10">Tesla Model 3 - Price: $10/km</option>
-          <option value="Tesla Model X - 25">Tesla Model X - Price: $25/km</option>
-          <option value="Tesla Model Y - 15">Tesla Model Y - Price: $15/km</option>
+          <?php
+          $i = 0;
+          while ($i < $stmt->num_rows) {
+            $stmt->bind_result($make, $model, $price);
+            $stmt->fetch();
+            echo '<option value="' . $make . ' ' . $model . ' - ' . $price . '">' . $make . ' ' . $model . ' - Price: $' . $price . '/km</option>';
+            $i++;
+          }
+          ?>
         </select>
         <br>
         <label for="source">Source</label>
