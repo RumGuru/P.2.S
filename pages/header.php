@@ -11,16 +11,13 @@
                         <a class="nav-link" href="../home.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">System Logo</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sign Up</a>
+                        <a class="nav-link" href="../pages/register.php">Sign Up</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Reviews</a>
@@ -31,12 +28,19 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Types of Services</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Ride to a destination</a>
-                            <a href="#" class="dropdown-item">Ride & Delivery</a>
+                            <a href="../pages/ride.php" class="dropdown-item">Ride to a destination</a>
+                            <a href="../pages/deliver.php" class="dropdown-item">Ride & Delivery</a>
                         </div>
                     </li>
-                    <form action="/php-scripts/logout_script.php">
-                        <input class="btn btn-outline-secondary" type="submit" value="Logout">
+                    <li class="nav-item">
+                        <form action="/php-scripts/logout_script.php">
+                            <input class="btn btn-outline-secondary" type="submit" value="Logout">
+                        </form>
+                    </li>
+                    <form method="post" class="navbar-form ml-3" role="search" action="/php-scripts/search.php">
+                        <div class="form-group">
+                            <input name="order_id" type="text" class="form-control" placeholder="Search">
+                        </div>
                     </form>
                 </ul>
             </div>
