@@ -1,5 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start();
+if ($_SERVER["PHP_SELF"] == "/php-scripts/search.php") {
+  require "./php-scripts/search.php";
+}
+echo $_POST["order_id"];
+
+?>
+<html>
 
 <head>
   <meta charset="UTF-8" />
@@ -61,6 +68,32 @@
         </p>
       </div>
     </div>
+    <?php
+    if ($_SESSION["order_id"] != "") {
+      echo '<div class="row justify-center">
+        <div class="jumbotron w-100">
+          <h1 class="display-4">Order number #' . $_SESSION["order_id"] . '</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Date issued</th>
+                <th scope="col">Date done</th>
+                <th scope="col">Total Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>' . $_SESSION["issued"] . '</td>
+                <td>' . $_SESSION["done"] . '</td>
+                <td>' . $_SESSION["total"] . '</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>';
+    }
+    ?>
+
   </div>
 
   <?php include './pages/footer.php'; ?>

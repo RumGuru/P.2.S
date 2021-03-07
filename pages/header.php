@@ -39,7 +39,7 @@
                     </li>
                     <form method="post" class="navbar-form ml-3" role="search" action="/php-scripts/search.php">
                         <div class="form-group">
-                            <input name="order_id" type="text" class="form-control" placeholder="Search">
+                            <input name="order_id" type="text" class="form-control" placeholder="Search by Order ID">
                         </div>
                     </form>
                 </ul>
