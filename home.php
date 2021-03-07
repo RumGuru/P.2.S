@@ -16,10 +16,10 @@
   <div class="container">
     <div class="row justify-center">
       <div class="jumbotron w-100">
-        <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <h1 class="display-4">Welcome to P.2.S!</h1>
+        <p class="lead">Book a ride or deliver an item!</p>
         <hr class="my-4">
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p>P2S attempts to provide a smart green solution on this regard by matching up drivers who live, work, and finally drive in the same neighborhood and would like to provide trip services.</p>
         <p class="lead">
           <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </p>
