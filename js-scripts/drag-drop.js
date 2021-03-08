@@ -2,6 +2,8 @@ const shop_items = document.querySelectorAll(".shop-item");
 const shop_cart = document.querySelector(".shop-cart");
 const total_price = document.querySelector(".total-price");
 
+console.log(shop_items);
+console.log(shop_cart);
 
 function clearShoppingCart()
 {
@@ -35,11 +37,14 @@ const calcPrice = (htmlPrice) =>{
 
 for (let i=0 ; i<shop_items.length ; i++){
     const item = shop_items[i];
+    console.log(item.lastChild);
 
 	item.addEventListener('dragstart', function () {
 		draggedItem = item;
+        console.log(item);
         itemTitle = document.querySelector(`.card-title-${i}`).innerHTML;
         itemPrice = document.querySelector('.text-muted').innerHTML;
+        console.log(itemPrice);
 		setTimeout(function () {
 			item.style.display = 'none';
 		}, 0)
@@ -56,6 +61,7 @@ for (let i=0 ; i<shop_items.length ; i++){
 }
 
 const cart = shop_cart;
+        console.log(cart);
 
     cart.addEventListener('dragover', function (e) {
         e.preventDefault();
@@ -71,6 +77,7 @@ const cart = shop_cart;
     });
 
     cart.addEventListener('drop', function (e) {
+        console.log('drop');
         calcPrice(itemPrice);
 
         cart.insertAdjacentHTML('beforeend',(renderSideCartView(itemTitle,itemPrice)));

@@ -28,7 +28,7 @@ echo $_POST["order_id"];
         <hr class="my-4">
         <p>P2S attempts to provide a smart green solution on this regard by matching up drivers who live, work, and finally drive in the same neighborhood and would like to provide trip services.</p>
         <p class="lead">
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          <a class="btn btn-primary btn-lg" href="/pages/about_us.php" role="button">Learn more</a>
         </p>
       </div>
     </div>

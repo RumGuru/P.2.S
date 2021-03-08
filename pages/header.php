@@ -11,10 +11,10 @@
                         <a class="nav-link" href="../home.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="/pages/about_us.php">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="/pages/contact_us.php">Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../pages/register.php">Sign Up</a>
@@ -23,7 +23,7 @@
                         <a class="nav-link" href="#">Reviews</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Shopping Cart</a>
+                        <a class="nav-link" href="/pages/checkout.php">Shopping Cart</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Types of Services</a>

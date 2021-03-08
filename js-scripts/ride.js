@@ -46,6 +46,7 @@ const onFormSubmit = (e) => {
             <span aria-hidden="true">&times;</span>
             </button>
         </div>`;
+    document.getElementById("checkout").classList.remove("d-none");
     setTimeout(() => {
         info.innerHTML = ""
     }, 2000);

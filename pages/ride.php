@@ -14,7 +14,7 @@
 <body>
   <?php include 'header.php'; ?>
   <div class="container">
-    <h1 class="">Plan your trip</h1>
+    <h1 id="head">Plan your trip</h1>
     <br>
     <form id="form" onsubmit="onFormSubmit(event)" onchange="onFormChange()">
       <div class="form-group">
@@ -42,7 +42,10 @@
       <div id="result"></div>
       <div id="map"></div>
       <br>
-      <input type="submit" class="btn btn-secondary w-100" value="Add to shopping cart">
+      <input type="submit" class="btn btn-outline-secondary w-100" value="Add to shopping cart">
+      <br>
+      <br>
+      <a href="/pages/checkout.php" id="checkout" type="button" class="btn btn-secondary w-100 d-none">Proceed to checkout</a>
       <br>
       <br>
       <div id="info"></div>
