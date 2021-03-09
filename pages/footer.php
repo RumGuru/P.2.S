@@ -25,7 +25,7 @@
         <div class="media">
           <img class="align-self-center mr-3 developers" src="../images/RumGuru.png" alt="RumGuru">
           <div class="media-body">
-            <h5 class="mt-0">Rahul LastName</h5>
+            <h5 class="mt-0">Rahul Kothwal</h5>
             <p class="mb-0"><a href="https://github.com/RumGuru">github.com/RumGuru</a></p>
           </div>
         </div>
