@@ -32,6 +32,13 @@
                             <a href="../pages/deliver.php" class="dropdown-item">Ride & Delivery</a>
                         </div>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">MOD</a>
+                        <div class="dropdown-menu">
+                            <a href="../pages/addData.php" class="dropdown-item">Add to DELIVERY database</a>
+                            <a href="../pages/addRideData.php" class="dropdown-item">Add to RIDE database</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
                         <form action="/php-scripts/logout_script.php">
                             <input class="btn btn-outline-secondary" type="submit" value="Logout">
