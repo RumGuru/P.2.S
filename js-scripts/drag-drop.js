@@ -30,6 +30,10 @@ const calcPrice = (htmlPrice) =>{
     price = price.replace('$','');
     numPrice = parseFloat(price);
     totalPrice += numPrice;
+
+    localStorage.setItem("total", totalPrice);
+
+   // console.log(localStorage.getItem("total"));
     
 }
 
@@ -85,4 +89,3 @@ const cart = shop_cart;
         draggedItem.remove();
         this.style.backgroundColor = 'rgba(0, 0, 0, 0.1)';
     });
-

@@ -102,6 +102,8 @@ function calcRoute(){
         if (status === 'OK'){
             directionsDisplay.setDirections(response);
             document.getElementById('price').innerHTML = parseInt(document.getElementById('cars').value.split(' - ')[1]) * response.routes[0].legs[0].distance.value/1000;
+            let dummy = parseInt(document.getElementById('cars').value.split(' - ')[1]) * response.routes[0].legs[0].distance.value/1000;
+            localStorage.setItem("total", dummy);
         } else {
             window.alert('Directions request failed ' + status);
         }

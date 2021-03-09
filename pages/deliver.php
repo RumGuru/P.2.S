@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <?php include 'header.php'; ?>
 
   <h1 class="">Plan your Delivery</h1>
@@ -46,6 +47,7 @@
 
   </div>
 
+  
   <?php include 'footer.php'; ?>
 
   <script src="../js-scripts/drag-drop.js"></script>
