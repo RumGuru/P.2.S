@@ -60,15 +60,15 @@
           <h5>
             <a href="#collapse3" data-parent="#accordion">
               Payment Info
+              <label for="name">Card Number</label>
+            <input class="form-control" type="text" id="cardnum" placeholder="Card #">
             </a>
           </h5>
         </div>
 
         <div id="collapse3" class="collapse">
           <div class="card-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto
-            aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint
-            et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+            
           </div>
         </div>
       </div>
