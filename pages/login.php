@@ -38,7 +38,7 @@
             </form>
 
             <div id="formFooter">
-                <p>Don't have an account? <a class="underlineHover" href="register.php">Sign up now</a>.</p>
+                <p>Don't have an account? <a class="underlineHover" href="/pages/register.php">Sign up now</a>.</p>
             </div>
 
         </div>
